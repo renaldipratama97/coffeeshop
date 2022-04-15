@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./views/Index";
+import Home from "./views/index";
 import Auth from "./views/Auth/Index";
 
 function App() {
