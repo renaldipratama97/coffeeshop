@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Index() {
   return (
     <>
-      <div className="flex w-100 h-20 items-center justify-between">
+      <div className="flex w-full h-20 items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-[30px] h-[33px]">
             <img src={require("../../../assets/img/logo.png")} alt="logo" />
@@ -13,8 +13,8 @@ export default function Index() {
         </div>
         <div className="font-bold text-primary text-2xl">Login</div>
       </div>
-      <div className="form-login w-12/12 h-auto px-12 mt-[10px]">
-        <div className="form-input flex flex-col gap-2 w-100 h-auto">
+      <div className="form-login w-full h-auto mt-[10px]">
+        <div className="form-input flex flex-col gap-2 w-full h-auto">
           <label htmlFor="email" className="text-[15px] font-bold">
             Email Address
           </label>

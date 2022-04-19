@@ -8,8 +8,8 @@ export default function Index() {
 
   return (
     <>
-      <div className="flex w-50 h-[350px] bg-[#F8F8F8]">
-        <div className="w-8/12 pt-[80px] px-[60px]">
+      <div className="flex flex-col w-100 py-10 h-auto md:h-[350px] md:flex-row bg-[#F8F8F8]">
+        <div className="md:w-7/12 w-12/12 pt-[80px] ml-[60px]">
           <div className="flex items-center gap-3">
             <div className="w-[25px] h-[28px]">
               <img src={require("../../../assets/img/logo.png")} alt="logo" />
@@ -31,7 +31,7 @@ export default function Index() {
           <span className="text-[#AFB5C0]">@2020CoffeeStore</span>
         </div>
 
-        <div className="w-6/12">
+        <div className="md:w-5/12 w-12/12 ml-[60px]">
           <div className="mt-10 w-12/12">
             <span className="font-bold text-[15px]">Product</span>
             <ul className="flex flex-wrap text-[#4F5665]">

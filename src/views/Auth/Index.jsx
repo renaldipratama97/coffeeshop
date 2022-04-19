@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <>
       <div className="w-100 h-auto flex">
-        <div className="image-login w-6/12 h-[900px]">
+        <div className="hidden lg:flex image-login w-6/12 h-[900px]">
           <img
             className="h-full w-full"
             src={require("../../assets/img/robert-bye.png")}
@@ -17,8 +17,8 @@ export default function Index() {
             alt="login"
           />
         </div>
-        <div className="flex flex-col w-6/12 h-[900px]">
-          <div className="w-12/12 h-[550px] bg-red-600 px-20">
+        <div className="flex flex-col w-12/12 lg:w-6/12 h-[900px]">
+          <div className="w-12/12 h-[550px] bg-red-600 px-10 md:px-20">
             <Routes>
               <>
                 <Route path="/" exact element={<Login />} />
