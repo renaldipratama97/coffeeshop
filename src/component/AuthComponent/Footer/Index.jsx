@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Index() {
+  
+  const linkSocmed = (param) =>{
+    window.location.href = param;
+  }
+
   return (
     <>
       <div className="flex w-50 h-[350px] bg-[#F8F8F8]">
@@ -14,15 +18,15 @@ export default function Index() {
           </div>
           <p className="leading-6 mt-5 font-bold text-[#4F5665] text-[15px]">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
           <div className="flex link-socmed py-5 gap-2">
-            <a href="https://facebook.com/coffeeShop">
-              <img src={require("../../../assets/socmed/facebook.png")} className="facebookIcon" />
-            </a>
-            <a href="https://twitter.com/coffeeShop">
-              <img src={require("../../../assets/socmed/twitter.png")} className="twitterIcon" />
-            </a>
-            <a href="https://instagram.com/coffeeShop">
-              <img src={require("../../../assets/socmed/instagram.png")} className="instagramIcon" />
-            </a>
+            <span onClick={() => linkSocmed("https://facebook.com")}>
+              <img src={require("../../../assets/socmed/facebook.png")} alt="facebookIcon" />
+            </span>
+            <span onClick={() => linkSocmed("https://twitter.com")}>
+              <img src={require("../../../assets/socmed/twitter.png")} alt="twitterIcon" />
+            </span>
+            <span onClick={() => linkSocmed("https://instagram.com")}>
+              <img src={require("../../../assets/socmed/instagram.png")} alt="instagramIcon" />
+            </span>
           </div>
           <span className="text-[#AFB5C0]">@2020CoffeeStore</span>
         </div>
@@ -30,23 +34,23 @@ export default function Index() {
         <div className="w-6/12">
           <div className="mt-10 w-12/12">
             <span className="font-bold text-[15px]">Product</span>
-            <ul>
-              <li className="w/6/12">Download</li>
-              <li className="w/6/12">Pricing</li>
-              <li className="w/6/12">Locations</li>
-              <li className="w/6/12">Countries</li>
-              <li className="w/6/12">Blog</li>
+            <ul className="flex flex-wrap text-[#4F5665]">
+              <li className="w-6/12">Download</li>
+              <li className="w-6/12">Pricing</li>
+              <li className="w-6/12">Locations</li>
+              <li className="w-6/12">Countries</li>
+              <li className="w-6/12">Blog</li>
             </ul>
           </div>
 
           <div className="mt-10 w-12/12">
             <span className="font-bold text-[15px]">Engage</span>
-            <ul>
-              <li className="w/6/12">Coffe Shop ? </li>
-              <li className="w/6/12">About Us</li>
-              <li className="w/6/12">FAQ</li>
-              <li className="w/6/12">Privacy Policy</li>
-              <li className="w/6/12">Terms of Service</li>
+            <ul className="flex flex-wrap text-[#4F5665]">
+              <li className="w-6/12">Coffe Shop ? </li>
+              <li className="w-6/12">About Us</li>
+              <li className="w-6/12">FAQ</li>
+              <li className="w-6/12">Privacy Policy</li>
+              <li className="w-6/12">Terms of Service</li>
             </ul>
           </div>
         </div>
