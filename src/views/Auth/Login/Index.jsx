@@ -13,7 +13,7 @@ export default function Index() {
         </div>
         <div className="font-bold text-primary text-2xl">Login</div>
       </div>
-      <div className="form-login w-full h-auto mt-[10px]">
+      <div className="form-login w-full h-auto mt-[20px]">
         <div className="form-input flex flex-col gap-2 w-full h-auto">
           <label htmlFor="email" className="text-[15px] font-bold">
             Email Address
@@ -25,13 +25,13 @@ export default function Index() {
           />
         </div>
         <div className="form-input flex flex-col gap-2 w-100 h-auto mt-3">
-          <label htmlFor="email" className="text-[15px] font-bold">
+          <label htmlFor="password" className="text-[15px] font-bold">
             Password
           </label>
           <input
             className="h-12 border rounded-xl indent-6 text-[15px]"
-            type="text"
-            placeholder="Enter your email adress"
+            type="password"
+            placeholder="Enter your password"
           />
         </div>
         <Link to="/auth/forgot-password">
@@ -49,9 +49,13 @@ export default function Index() {
           />
           Login with Google
         </button> */}
-        <p className="text-gray text-[16px] font-bold mt-5 w-full text-center">
-          Don’t have an account?
-        </p>
+        <div className="flex flex-nowrap w-full mt-6">
+					<span className="border-solid box-border bg-[#C4C4C4] w-3/12 h-1 m-auto"></span>
+					<p className="text-gray text-[16px] font-bold w-8/12 text-center">
+            Don’t have an account?
+					</p>
+					<span className="border-solid box-border bg-[#C4C4C4] w-3/12 h-1 m-auto"></span>
+				</div>
         <Link to="/auth/sign-up">
           <button className="bg-primary shadow-lg h-12 w-full mt-5 rounded-xl font-bold text-[17px] text-white">
             Sign up here

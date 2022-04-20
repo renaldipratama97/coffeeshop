@@ -10,7 +10,7 @@ export default function index() {
             Login
           </button>
         </Link>
-        <Link to="/auth">
+        <Link to="/auth/sign-up">
           <button className="bg-secondary w-auto h-12 px-5 rounded-xl text-blacked">
             Sign Up
           </button>
