@@ -9,6 +9,10 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.image-section {
+  background: url('./assets/img/lp-coffee.png');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
