@@ -13,7 +13,9 @@ export default function Index() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full h-auto mt-20 text-secondary text-[20px]">
-          this component is under development
+          <h1 className="text-black font-bold text-[45px]">
+            Forgot Your Password ?
+          </h1>
         </div>
       </>
     </>
