@@ -7,6 +7,7 @@ export default function Header() {
       <div className="w-full h-[100px]">
         <div className="flex justify-between items-center mx-auto w-10/12 h-full">
           <div className="flex items-center h-full">
+            {/* Ini title */}
             <div className="w-[30px] h-[33px]">
               <img src={require("../../assets/img/logo.png")} alt="logo" />
             </div>
