@@ -39,7 +39,7 @@ export default function Header() {
             </Link>
             <Link to="/auth/sign-up">
               <button className="bg-secondary h-[45px] w-[100px] rounded-[50px] text-lg font-medium text-primary hover:bg-white hover:text-secondary hover:border-2 hover:border-secondary">
-                Auth
+                Sign Up
               </button>
             </Link>
           </div>

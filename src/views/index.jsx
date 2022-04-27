@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../component/LandingPage/Header";
 import ImageSection from "../component/LandingPage/ImageSection";
 
-export default function index() {
+export default function Index() {
   return (
     <>
       <div className="w-auto h-auto bg-[#F8F8F8]">
