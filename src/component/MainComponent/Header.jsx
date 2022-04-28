@@ -35,6 +35,9 @@ export default function Header() {
               <img src={require("../../assets/img/search.png")} className="max-h-[30px]" alt="search" />
             </Link>
             <Link to="/chat" className="hover:scale-110">
+              <div className="w-[20px] h-[20px] bg-primary text-white absolute mt-[-10px] ml-[-10px] text-[10px] p-2 rounded-full leading-[4px]">
+                <span>1</span>
+              </div>
               <img src={require("../../assets/img/chat.png")} className="max-h-[30px]" alt="chat" />
             </Link>
             <Link to="/profile" className="hover:scale-110">
